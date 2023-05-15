@@ -6,6 +6,10 @@ services:
       - db
     ports:
       - "8000:8000"
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"    
   db:
     image: mysql:latest
     ports:
